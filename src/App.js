@@ -3,32 +3,41 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  // operator button - handle calculation
+  constructor() {
+    this.state = { currValues: [] };
+    this.storeValues = this.storeValues.bind(this);
+  }
+
+  storeValues() {
+
+  }
   render() {
     return (
       <div className="App">
         <input type="text" disabled></input>
         <div>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>/</button>
+          <button className="num-btn">7</button>
+          <button className="num-btn">8</button>
+          <button className="num-btn">9</button>
+          <button className="operator-btn">/</button>
         </div>
         <div>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>*</button>
+          <button className="num-btn">4</button>
+          <button className="num-btn">5</button>
+          <button className="num-btn">6</button>
+          <button className="operator-btn">*</button>
         </div>
         <div>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>-</button>
+          <button className="num-btn">1</button>
+          <button className="num-btn">2</button>
+          <button className="num-btn">3</button>
+          <button className="operator-btn">-</button>
         </div>
         <div>
-          <button>0</button>
-          <button>+</button>
-          <button>=</button>
+          <button className="num-btn">0</button>
+          <button className="operator-btn">+</button>
+          <button className="operator-btn">=</button>
         </div>
 
       </div>
