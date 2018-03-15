@@ -1,0 +1,23 @@
+.App {
+  margin: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.results {
+  border: 1px solid grey;
+  width: 110px;
+  text-align: right;
+  padding: 0 10px 0 15px;
+}
