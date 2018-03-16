@@ -3,12 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  // operator button - handle calculation
   constructor(props) {
     super(props);
     this.state = {
       currValues: "",
-      operation: "",
       result: ""
     };
     this.storeValues = this.storeValues.bind(this);
@@ -38,9 +36,6 @@ class App extends Component {
     });
 
     let values = str.split(operator);
-
-    console.log(values);
-
     let val1 = parseInt(values[0]);
     let val2 = parseInt(values[1]);
 
@@ -68,8 +63,6 @@ class App extends Component {
       operation: "",
       result: newResult
     });
-
-    console.log("state", this.state);
   }
 
   clear(event) {
