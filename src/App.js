@@ -94,28 +94,28 @@ class App extends Component {
           <span>{result}</span>
         </div>
         <div>
-          <button onClick={this.storeValues} className="num-btn">7</button>
-          <button onClick={this.storeValues} className="num-btn">8</button>
-          <button onClick={this.storeValues} className="num-btn">9</button>
-          <button onClick={this.storeValues} className="operator-btn">/</button>
+          <button onClick={this.storeValues}>7</button>
+          <button onClick={this.storeValues}>8</button>
+          <button onClick={this.storeValues}>9</button>
+          <button onClick={this.storeValues}>/</button>
         </div>
         <div>
-          <button onClick={this.storeValues} className="num-btn">4</button>
-          <button onClick={this.storeValues} className="num-btn">5</button>
-          <button onClick={this.storeValues} className="num-btn">6</button>
-          <button onClick={this.storeValues} className="operator-btn">*</button>
+          <button onClick={this.storeValues}>4</button>
+          <button onClick={this.storeValues}>5</button>
+          <button onClick={this.storeValues}>6</button>
+          <button onClick={this.storeValues}>*</button>
         </div>
         <div>
-          <button onClick={this.storeValues} className="num-btn">1</button>
-          <button onClick={this.storeValues} className="num-btn">2</button>
-          <button onClick={this.storeValues} className="num-btn">3</button>
-          <button onClick={this.storeValues} className="operator-btn">-</button>
+          <button onClick={this.storeValues}>1</button>
+          <button onClick={this.storeValues}>2</button>
+          <button onClick={this.storeValues}>3</button>
+          <button onClick={this.storeValues}>-</button>
         </div>
         <div>
-          <button onClick={this.clear} className="clear-btn">C</button>
-          <button onClick={this.storeValues} className="num-btn">0</button>
-          <button onClick={this.handleCalc} className="operator-btn">=</button>
-          <button onClick={this.storeValues}className="operator-btn">+</button>
+          <button onClick={this.clear}>C</button>
+          <button onClick={this.storeValues}>0</button>
+          <button onClick={this.handleCalc}>=</button>
+          <button onClick={this.storeValues}>+</button>
         </div>
 
       </div>
