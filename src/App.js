@@ -83,34 +83,40 @@ class App extends Component {
     }
     return (
       <div className="App">
-        <div className="results">
-          <span>{result}</span>
+        <h2>Uber Calculator</h2>
+        <h3>Built with React</h3>
+        <div className='calc'>
+          <div className="results">
+            <span>{result}</span>
+          </div>
+          <div>
+            <button onClick={this.storeValues}>7</button>
+            <button onClick={this.storeValues}>8</button>
+            <button onClick={this.storeValues}>9</button>
+            <button onClick={this.storeValues}>/</button>
+          </div>
+          <div>
+            <button onClick={this.storeValues}>4</button>
+            <button onClick={this.storeValues}>5</button>
+            <button onClick={this.storeValues}>6</button>
+            <button onClick={this.storeValues}>*</button>
+          </div>
+          <div>
+            <button onClick={this.storeValues}>1</button>
+            <button onClick={this.storeValues}>2</button>
+            <button onClick={this.storeValues}>3</button>
+            <button onClick={this.storeValues}>-</button>
+          </div>
+          <div>
+            <button onClick={this.clear}>C</button>
+            <button onClick={this.storeValues}>0</button>
+            <button onClick={this.handleCalc}>=</button>
+            <button onClick={this.storeValues}>+</button>
+          </div>
         </div>
         <div>
-          <button onClick={this.storeValues}>7</button>
-          <button onClick={this.storeValues}>8</button>
-          <button onClick={this.storeValues}>9</button>
-          <button onClick={this.storeValues}>/</button>
+          <a href="https://github.com/julielin0812/uber-calculator">Github Repo</a>
         </div>
-        <div>
-          <button onClick={this.storeValues}>4</button>
-          <button onClick={this.storeValues}>5</button>
-          <button onClick={this.storeValues}>6</button>
-          <button onClick={this.storeValues}>*</button>
-        </div>
-        <div>
-          <button onClick={this.storeValues}>1</button>
-          <button onClick={this.storeValues}>2</button>
-          <button onClick={this.storeValues}>3</button>
-          <button onClick={this.storeValues}>-</button>
-        </div>
-        <div>
-          <button onClick={this.clear}>C</button>
-          <button onClick={this.storeValues}>0</button>
-          <button onClick={this.handleCalc}>=</button>
-          <button onClick={this.storeValues}>+</button>
-        </div>
-
       </div>
     );
   }
